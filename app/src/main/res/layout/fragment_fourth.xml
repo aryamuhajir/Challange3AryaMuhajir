@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FourthFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:textStyle="bold"
+        android:id="@+id/screen4"
+        android:textSize="18sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/screen4"
+        android:id="@+id/card1"
+        app:cardCornerRadius="12dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:lineHeight="10dp"
+            android:id="@+id/editUsia"
+            android:hint="@string/masukkan_usia"
+            tools:targetApi="p"
+            android:autofillHints="Usia"
+            android:inputType="number" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/card1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/card2"
+        app:cardCornerRadius="12dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:lineHeight="10dp"
+            android:id="@+id/editAlamat"
+            android:hint="@string/masukkan_alamat"
+            tools:targetApi="p"
+            android:autofillHints="Alamat"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/card2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/card3"
+        app:cardCornerRadius="12dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:lineHeight="10dp"
+            android:id="@+id/editPekerjaan"
+            android:hint="@string/masukkan_pekerjaan"
+            tools:targetApi="p"
+            android:autofillHints="Pekerjaan"
+            android:inputType="text" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/back_to_screen_3" />
+
+
+</RelativeLayout>
